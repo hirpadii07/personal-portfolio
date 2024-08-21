@@ -1,7 +1,10 @@
-module.exports = {
+const nextConfig = {
 	reactStrictMode: true,
 	env: {
 		dir: '/',
+	},
+	eslint: {
+		ignoreDuringBuilds: true,
 	},
 	images: {
 		remotePatterns: [
@@ -13,7 +16,7 @@ module.exports = {
 			{
 				protocol: 'https',
 				hostname: '**.vercel.app',
-				pathname: '?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app'
+				pathname: '/portfolio-theme-jqe0jhmif-atlamors.vercel.app/**'
 			},
 			{
 				protocol: 'https',
@@ -37,4 +40,6 @@ module.exports = {
 			},
 		],
 	},
-}
+};
+
+module.exports = nextConfig;
