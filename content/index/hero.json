@@ -1,0 +1,32 @@
+{
+	"intro": {
+		"start": "const Aditya = ( name, passion ) =>",
+		"end": "Hello, my name is",
+		"speed": 60,
+		"deletionSpeed": 80,
+		"wrapper": "h2",
+		"startDelay": 1000,
+		"deleteDelay": 3000,
+		"restartDelay": 12000
+	},
+
+	"header": {
+		"name": "Aditya Hirpara.",
+		"usp": "I design and develop robust software solutions."
+	},
+
+	"paragraph": "As a Computer Programming student, I'm passionate about blending creativity with technology. I enjoy pushing the boundaries of what's possible, whether it's through code, design, or innovative problem-solving.",
+  
+	"buttons": {
+		"primary": {
+			"title": "Contact Me",
+			"url": "mailto:hirpaa7@hotmail.com",
+			"leaveSite": false
+		},
+		"secondary": {
+			"title": "LinkedIn",
+			"url": "https://linkedin.com/in/aditya-hirpara-39a34429a",
+			"leaveSite": true
+		}
+	}
+}

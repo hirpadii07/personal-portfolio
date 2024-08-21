@@ -1,0 +1,106 @@
+@import '../../scss/mixins';
+
+.section {
+    background: var(--background-dim);
+    border-bottom: 1px solid var(--primary-dark);
+    padding: 2rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skillCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--primary-dark);
+    background-color: var(--background-dim2);
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+
+    &:hover {
+        border-color: var(--primary-dim2);
+    }
+}
+
+.categoryTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-dim);
+}
+
+.skillList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    border-radius: 1.5rem;
+    border: 1px solid var(--primary-light);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-light);
+        border-color: var(--primary-dark);
+        color: var(--background-dim);
+    }
+
+    .skillIcon {
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        color: var(--icon-color);
+    }
+}
+
+.theme-dark {
+    --background-light: #1a1a1a;
+    --text-primary: #ffffff;
+    --primary-light: #cccccc;
+    --primary-dark: #ffffff;
+    --icon-color: #ffffff;
+}
+
+.theme-light {
+    --background-light: #ffffff;
+    --text-primary: #333333;
+    --primary-light: #e0e0e0;
+    --primary-dark: #333333;
+    --icon-color: #333333;
+}
+
+.theme-contrast {
+    --background-light: #000000;
+    --text-primary: #ffff00;
+    --primary-light: #ffff00;
+    --primary-dark: #ffffff;
+    --icon-color: #ffff00;
+}
+
+@include media($max: $mobile) {
+    .skillCategory {
+        flex-basis: 100%;
+    }
+
+    .categoryTitle {
+        text-align: center;
+    }
+
+    .skillList {
+        justify-content: center;
+    }
+}

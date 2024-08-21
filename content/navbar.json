@@ -1,0 +1,14 @@
+[
+	{
+		"url": "/skills",
+		"title": "Skills"
+	},
+	{
+		"url": "/projects",
+		"title": "Projects"
+	},
+	{
+		"url": "/contact",
+		"title": "Contact Me"
+	}
+]
